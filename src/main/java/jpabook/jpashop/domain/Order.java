@@ -36,6 +36,9 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status; // 주문상태 [ORDER, CANCLE]
 
+    protected Order() {
+    }
+
     /* 연관관계 메서드 */
     public void setMember(Member member) {
         this.member = member;
